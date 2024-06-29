@@ -59,6 +59,30 @@ La configuración de Swagger se realiza en el archivo application.properties. A 
 #### Anotaciones en Controladores
     Los controladores están anotados con @Operation y @Parameter para documentar automáticamente los endpoints. 
 
+### Dependencias para Documentación
+Para habilitar la documentación automática de la API mediante Swagger, hemos añadido las siguientes dependencias en el archivo pom.xml:
+
+- springdoc-openapi-starter-webmvc-ui:
+Esta dependencia proporciona la integración con Swagger UI para generar la documentación interactiva de la API a partir de las anotaciones en los controladores.
+- spring-boot-starter-validation:
+Esta dependencia se utiliza para la validación de datos dentro de las aplicaciones Spring Boot, asegurando que los datos que llegan a los endpoints cumplan con los requisitos definidos.
+
+```xml
+<dependencies>
+    <!-- Dependencias para documentación Spring Doc -->
+    <dependency>
+        <groupId>org.springdoc</groupId>
+        <artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+        <version>2.2.0</version>
+    </dependency>
+    <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-validation</artifactId>
+    </dependency>
+</dependencies>
+
+
+
 
 ## Dependencias
 
