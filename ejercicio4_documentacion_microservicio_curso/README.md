@@ -106,5 +106,9 @@ Para habilitar la documentación automática de la API mediante Swagger, hemos a
     </dependency>
    </dependencies>```
 
+- springdoc-openapi-starter-webmvc-ui:
+Esta dependencia proporciona la integración con Swagger UI para generar la documentación interactiva de la API a partir de las anotaciones en los controladores.
+- spring-boot-starter-validation:
+Esta dependencia se utiliza para la validación de datos dentro de las aplicaciones Spring Boot, asegurando que los datos que llegan a los endpoints cumplan con los requisitos definidos.
 
 
