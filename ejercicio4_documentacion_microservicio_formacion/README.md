@@ -40,6 +40,11 @@ Este microservicio forma parte de un sistema de gestión educativa y se encarga 
 - `GET /formacion`: Obtiene todas las formaciones
 - `POST /formacion`: Crea una nueva formación
 
+## Dependencias
+
+Este microservicio depende del microservicio de cursos. Asegúrate de que esté en ejecución y accesible antes de usar este servicio.
+- https://github.com/ext-gonbonan/ejercicio1_desarrollo_microservicio_crud_cursos.git
+
 ## Documentación de la API
 La documentación de la API está disponible mediante Swagger. Para acceder a ella, sigue estos pasos:
 
@@ -80,11 +85,3 @@ Esta dependencia se utiliza para la validación de datos dentro de las aplicacio
         <artifactId>spring-boot-starter-validation</artifactId>
     </dependency>
 </dependencies>
-
-
-
-
-## Dependencias
-
-Este microservicio depende del microservicio de cursos. Asegúrate de que esté en ejecución y accesible antes de usar este servicio.
-- https://github.com/ext-gonbonan/ejercicio1_desarrollo_microservicio_crud_cursos.git
