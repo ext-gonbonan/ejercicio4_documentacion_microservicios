@@ -50,7 +50,7 @@ Este microservicio depende del microservicio de cursos. Asegúrate de que esté 
 La documentación de la API está disponible mediante Swagger. Para acceder a ella, sigue estos pasos:
 
 Asegúrate de que la aplicación esté en ejecución.
-Ve a http://localhost:8080/swagger-ui.html en tu navegador.
+Ve a http://localhost:9000/swagger-ui.html en tu navegador.
 
 ![imagen](https://github.com/ext-gonbonan/ejercicio4_documentacion_microservicios/assets/173496006/5a223792-e068-4287-84be-475e1da0e3f9)
 
