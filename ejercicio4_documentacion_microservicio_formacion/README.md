@@ -40,18 +40,6 @@ Este microservicio forma parte de un sistema de gestión educativa y se encarga 
 - `GET /formacion`: Obtiene todas las formaciones
 - `POST /formacion`: Crea una nueva formación
 
-### Ejemplos de Peticiones
-
-#### Obtener Formaciones
-GET http://localhost:8080/formacion
-![imagen](https://github.com/ext-gonbonan/ejercicio2_microservicio_formacion/assets/173496006/c6686a73-5043-4d80-b8bf-1356769e1793)
-
-
-#### Crear Formación
-POST http://localhost:9000/formacion
-![imagen](https://github.com/ext-gonbonan/ejercicio2_microservicio_formacion/assets/173496006/4a7e7cb3-1ae0-4690-93f6-159dadc4de09)
-
-
 ## Documentación de la API
 La documentación de la API está disponible mediante Swagger. Para acceder a ella, sigue estos pasos:
 
