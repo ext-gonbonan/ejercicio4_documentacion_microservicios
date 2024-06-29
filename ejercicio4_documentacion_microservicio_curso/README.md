@@ -2,7 +2,7 @@
 
 ## Descripción del Proyecto
 
-Este proyecto implementa un microservicio RESTful securizado para la gestión de cursos educativos. Proporciona operaciones CRUD (Crear, Leer, Actualizar, Eliminar) para entidades de tipo Curso, permitiendo una gestión eficiente de la información de cursos en una plataforma educativa, con diferentes niveles de acceso según el rol del usuario.
+Este proyecto implementa un microservicio RESTful para la gestión de cursos educativos. Proporciona operaciones CRUD (Crear, Leer, Actualizar, Eliminar) para entidades de tipo Curso, permitiendo una gestión eficiente de la información de cursos en una plataforma educativa.
 
 ### Características Principales:
 
@@ -11,18 +11,18 @@ Este proyecto implementa un microservicio RESTful securizado para la gestión de
 - Actualización de la información de cursos existentes.
 - Eliminación de cursos del sistema.
 - Búsqueda de cursos por rango de precios.
-- Securización basada en roles para controlar el acceso a las diferentes operaciones.
+- Documentación automática de la API mediante Swagger.
 
 ## Tecnologías Utilizadas
 
 - **Java 17**: Lenguaje de programación principal.
 - **Spring Boot 3.3.1**: Framework para el desarrollo de aplicaciones Java.
-- **Spring Security**: Para la implementación de seguridad y control de acceso.
 - **Spring Data JPA**: Para la persistencia de datos y operaciones CRUD.
 - **MySQL**: Sistema de gestión de base de datos relacional.
 - **Maven**: Herramienta de gestión y construcción del proyecto.
 - **Lombok**: Biblioteca para reducir el código boilerplate.
 - **Spring Boot DevTools**: Para el reinicio automático durante el desarrollo.
+- **Springdoc OpenAPI**: Para la documentación del proyecto
 
 ## Configuración y Ejecución del Proyecto
 
@@ -60,29 +60,6 @@ Este proyecto implementa un microservicio RESTful securizado para la gestión de
 1. **Iniciar la Aplicación**:
    - `mvn spring-boot:run`
 
-## Seguridad y Control de Acceso
-
-El proyecto implementa seguridad basada en roles utilizando Spring Security:
-
-### Roles de Usuario:
-- INVITADO
-- OPERADOR
-- ADMIN
-
-### Usuarios Predefinidos:
-- user1: INVITADO
-- user2: OPERADOR
-- user3: ADMIN
-- user4: ADMIN, OPERADOR
-
-### Permisos por Rol:
-- POST /cursos: Solo ADMIN
-- DELETE /cursos/**: ADMIN o OPERADOR
-- PUT /cursos/**: ADMIN o OPERADOR
-- GET /cursos/** y GET /cursos: Cualquier usuario autenticado
-
-La autenticación se realiza mediante autenticación básica HTTP.
-
 ## Endpoints Disponibles
 
 - GET /cursos: Obtiene todos los cursos.
@@ -93,8 +70,25 @@ La autenticación se realiza mediante autenticación básica HTTP.
 - GET /cursos/precios/{precioMin}/{precioMax}: Obtiene cursos dentro de un rango de precios usando una función Spring Data JPA.
 - GET /cursos/precios2/{precioMin}/{precioMax}: Obtiene cursos dentro de un rango de precios usando una función QUERY
 
-Nota: Todos los endpoints requieren autenticación. Asegúrese de proporcionar las credenciales adecuadas al realizar las solicitudes.
 
+## Documentación de la API
+La documentación de la API está disponible mediante Swagger. Para acceder a ella, sigue estos pasos:
+
+Asegúrate de que la aplicación esté en ejecución.
+Ve a http://localhost:8080/swagger-ui.html en tu navegador.
+
+![imagen](https://github.com/ext-gonbonan/ejercicio4_documentacion_microservicios/assets/173496006/5a223792-e068-4287-84be-475e1da0e3f9)
+
+
+### Configuración de Swagger
+La configuración de Swagger se realiza en el archivo application.properties. A continuación, se muestra un ejemplo de configuración:
+
+#### Configuración Spring Doc
+    springdoc.packages-to-scan=com.formacion.controller
+    springdoc.paths-to-match=/**
+
+#### Anotaciones en Controladores
+    Los controladores están anotados con @Operation y @Parameter para documentar automáticamente los endpoints. 
 
 
 
