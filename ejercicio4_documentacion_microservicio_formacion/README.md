@@ -46,6 +46,9 @@ La documentación de la API está disponible mediante Swagger. Para acceder a el
 Asegúrate de que la aplicación esté en ejecución.
 Ve a http://localhost:8080/swagger-ui.html en tu navegador.
 
+![imagen](https://github.com/ext-gonbonan/ejercicio4_documentacion_microservicios/assets/173496006/5a223792-e068-4287-84be-475e1da0e3f9)
+
+
 ### Configuración de Swagger
 La configuración de Swagger se realiza en el archivo application.properties. A continuación, se muestra un ejemplo de configuración:
 
