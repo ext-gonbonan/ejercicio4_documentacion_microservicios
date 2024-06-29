@@ -93,7 +93,7 @@ La configuración de Swagger se realiza en el archivo application.properties. A 
 ### Dependencias para Documentación
 Para habilitar la documentación automática de la API mediante Swagger, hemos añadido las siguientes dependencias en el archivo pom.xml:
 
-   <dependencies>
+   ```<dependencies>
     <!-- Dependencias para documentación Spring Doc -->
     <dependency>
         <groupId>org.springdoc</groupId>
@@ -104,7 +104,7 @@ Para habilitar la documentación automática de la API mediante Swagger, hemos a
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-validation</artifactId>
     </dependency>
-   </dependencies>
+   </dependencies>```
 
 
 
