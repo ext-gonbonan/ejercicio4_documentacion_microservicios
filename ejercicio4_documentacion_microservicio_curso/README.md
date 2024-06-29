@@ -75,9 +75,9 @@ Este proyecto implementa un microservicio RESTful para la gestión de cursos edu
 La documentación de la API está disponible mediante Swagger. Para acceder a ella, sigue estos pasos:
 
 Asegúrate de que la aplicación esté en ejecución.
-Ve a http://localhost:8080/swagger-ui.html en tu navegador.
+Ve a http://localhost:8090/swagger-ui.html en tu navegador.
 
-![imagen](https://github.com/ext-gonbonan/ejercicio4_documentacion_microservicios/assets/173496006/5a223792-e068-4287-84be-475e1da0e3f9)
+![imagen](https://github.com/ext-gonbonan/ejercicio4_documentacion_microservicios/assets/173496006/6fe22786-4dcd-4007-b031-26f799f98768)
 
 
 ### Configuración de Swagger
